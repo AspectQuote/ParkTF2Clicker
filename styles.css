@@ -1,0 +1,55 @@
+@font-face {
+  font-family: TF2;
+  src: url(TF2.ttf);
+}
+* {
+  font-family: TF2;
+  color: #ef9849;
+}
+:root {
+  --o:#ef9849;
+  --t:#717171;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  background-image: url('sitebackground.jpg');
+  background-size: cover;
+  background-color: #111111;
+  background-blend-mode: overlay;
+}
+.logo {
+  text-align: center;
+  width: 60%;
+  margin-left: 20%;
+  border-bottom: 1px solid #ef9849;
+  position: relative;
+  height: 40%;
+  margin-top: 2.5%;
+  margin-bottom: 5%;
+  padding-top: 30px;
+}
+.logo img {
+  height: 100%;
+}
+.logo:after {
+  content: 'Is down for now.';
+  font-weight: bold;
+  color: var(--t);
+  font-size: 22px;
+  position: absolute;
+  left: 50%;
+  top: 102%;
+  transform: translateX(-50%);
+}
+.downdesc {
+  width: 80%;
+  margin-left: 10%;
+  text-align: center;
+  color: var(--t);
+  cursor: default;
+}
